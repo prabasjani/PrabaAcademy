@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+body {
+  @apply bg-neutral-100;
+}
+
+.active {
+  color: #27272a; /* text-zinc-800 */
+  font-size: 18px;
+}
+.btn {
+  @apply px-4 py-2 font-semibold text-white rounded-lg cursor-pointer tracking-wider;
+}
+
+h2 {
+  @apply text-2xl font-semibold tracking-wide text-zinc-800;
+}
+h3 {
+  @apply text-lg font-semibold tracking-wide text-zinc-600;
+}
+
+/* Custome Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #52525c;
+  border-radius: 10px;
+}
